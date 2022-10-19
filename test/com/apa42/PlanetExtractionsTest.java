@@ -11,7 +11,7 @@ class PlanetExtractionsTest {
 
     @Test
     public void should_return_expected_output_for_earth_summer_uk(){
-        Planet myPlanet = new Planet("earth", "Summer", "Summer");
+        Planet myPlanet = new PlanetBuilder().setPlanetName("earth").setSeason("Summer").setRealSeason("Summer").createPlanet();
         PlanetExtractions sut = new PlanetExtractions();
 
         List<String> result = sut.printPlanetFacts(myPlanet, "UK");
@@ -28,7 +28,7 @@ class PlanetExtractionsTest {
 
     @Test
     public void should_return_expected_output_for_earth_spring_uk(){
-        Planet myPlanet = new Planet("earth", "Spring", "Spring");
+        Planet myPlanet = new PlanetBuilder().setPlanetName("earth").setSeason("Spring").setRealSeason("Spring").createPlanet();
         PlanetExtractions sut = new PlanetExtractions();
 
         List<String> result = sut.printPlanetFacts(myPlanet, "UK");
@@ -45,7 +45,7 @@ class PlanetExtractionsTest {
 
     @Test
     public void should_return_expected_output_for_earth_autumn_uk(){
-        Planet myPlanet = new Planet("earth", "Autumn", "Autumn");
+        Planet myPlanet = new PlanetBuilder().setPlanetName("earth").setSeason("Autumn").setRealSeason("Autumn").createPlanet();
         PlanetExtractions sut = new PlanetExtractions();
 
         List<String> result = sut.printPlanetFacts(myPlanet, "UK");
@@ -62,7 +62,7 @@ class PlanetExtractionsTest {
 
     @Test
     public void should_return_expected_output_for_earth_default_uk(){
-        Planet myPlanet = new Planet("earth", "", "");
+        Planet myPlanet = new PlanetBuilder().setPlanetName("earth").setSeason("").setRealSeason("").createPlanet();
         PlanetExtractions sut = new PlanetExtractions();
 
         List<String> result = sut.printPlanetFacts(myPlanet, "UK");
