@@ -46,3 +46,25 @@ MacOS: ALT + CMD + P
 Vamos ha hacer _inline_ la función _updateWithWeather_
 
 MacOS: ALT + CMD + N
+
+
+## Change signature
+Ir a la clase _Planeta_ al constructor
+
+Nuevo parámetro _String realSeason_
+Seleccionar _Default value: "Summer"_
+
+Cambiar public String getCountryWeather() {
+```java
+public String getCountryWeather() {
+        return realSeason;
+    }
+```
+Ver que me cambia los tests al meter un nuevo parámetro
+
+OJO que ahora están en rojo salvo 1, cambiar en los test el valor de _realSeason_
+
+
+
+
+MacOS: CMD + F6

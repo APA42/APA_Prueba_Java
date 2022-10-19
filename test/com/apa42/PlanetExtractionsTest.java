@@ -11,7 +11,7 @@ class PlanetExtractionsTest {
 
     @Test
     public void should_return_expected_output_for_earth_summer_uk(){
-        Planet myPlanet = new Planet("earth", "Summer");
+        Planet myPlanet = new Planet("earth", "Summer", "Summer");
         PlanetExtractions sut = new PlanetExtractions();
 
         List<String> result = sut.printPlanetFacts(myPlanet, "UK");
@@ -28,7 +28,7 @@ class PlanetExtractionsTest {
 
     @Test
     public void should_return_expected_output_for_earth_spring_uk(){
-        Planet myPlanet = new Planet("earth", "Spring");
+        Planet myPlanet = new Planet("earth", "Spring", "Summer");
         PlanetExtractions sut = new PlanetExtractions();
 
         List<String> result = sut.printPlanetFacts(myPlanet, "UK");
@@ -45,7 +45,7 @@ class PlanetExtractionsTest {
 
     @Test
     public void should_return_expected_output_for_earth_autumn_uk(){
-        Planet myPlanet = new Planet("earth", "Autumn");
+        Planet myPlanet = new Planet("earth", "Autumn", "Summer");
         PlanetExtractions sut = new PlanetExtractions();
 
         List<String> result = sut.printPlanetFacts(myPlanet, "UK");
@@ -62,7 +62,7 @@ class PlanetExtractionsTest {
 
     @Test
     public void should_return_expected_output_for_earth_default_uk(){
-        Planet myPlanet = new Planet("earth", "");
+        Planet myPlanet = new Planet("earth", "", "Summer");
         PlanetExtractions sut = new PlanetExtractions();
 
         List<String> result = sut.printPlanetFacts(myPlanet, "UK");
