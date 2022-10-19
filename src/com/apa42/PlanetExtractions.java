@@ -6,6 +6,7 @@ import java.util.List;
 public class PlanetExtractions {
 
     public static final int NUMBER_OF_DAYS_IN_A_YEAR = 365;
+    private static String theWeatherIs;
 
     public List<String> printPlanetFacts(Planet planet, String country) {
         List<String> result = new ArrayList<>();
@@ -21,16 +22,17 @@ public class PlanetExtractions {
     private static void updateWithWeather(Planet planet, List<String> result) {
         switch (planet.getCountryWeather()) {
             case "Spring":
-                result.add("The weather is warm in the UK");
+                theWeatherIs = "The weather is";
+                result.add(theWeatherIs + " warm in the UK");
                 break;
             case "Summer":
-                result.add("The weather is hot in the UK");
+                result.add(theWeatherIs + " hot in the UK");
                 break;
             case "Autumn":
-                result.add("The weather is cool in the UK");
+                result.add(theWeatherIs + " cool in the UK");
                 break;
             default:
-                result.add("The weather is cold in the UK");
+                result.add(theWeatherIs + " cold in the UK");
                 break;
         }
     }
