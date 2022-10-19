@@ -5,11 +5,13 @@ import java.util.List;
 
 public class PlanetExtractions {
 
+    public static final int NUMBER_OF_DAYS_IN_A_YEAR = 365;
+
     public List<String> printPlanetFacts(Planet planet, String country) {
         List<String> result = new ArrayList<>();
         result.add("Planet name is " + planet.getName());
         result.add("Current season is " + planet.getCountryWeather());
-        result.add("Number of times the planet rotates around the sun is " + 365);
+        result.add("Number of times the planet rotates around the sun is " + NUMBER_OF_DAYS_IN_A_YEAR);
         result.add("Number of characters in planet name = " + planet.getName().length());
         updateWithWeather(planet, result);
 
