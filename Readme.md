@@ -64,7 +64,4 @@ Ver que me cambia los tests al meter un nuevo parámetro
 
 OJO que ahora están en rojo salvo 1, cambiar en los test el valor de _realSeason_
 
-
-
-
 MacOS: CMD + F6
