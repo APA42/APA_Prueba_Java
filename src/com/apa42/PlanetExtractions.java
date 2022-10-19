@@ -1,6 +1,5 @@
 package com.apa42;
 
-import java.beans.PropertyEditorSupport;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,6 +11,12 @@ public class PlanetExtractions {
         result.add("Current season is " + planet.getCountryWeather());
         result.add("Number of times the planet rotates around the sun is " + 365);
         result.add("Number of characters in planet name = " + planet.getName().length());
+        updateWithWeather(planet, result);
+
+        return result;
+    }
+
+    private static void updateWithWeather(Planet planet, List<String> result) {
         switch (planet.getCountryWeather()) {
             case "Spring":
                 result.add("The weather is warm in the UK");
@@ -26,7 +31,5 @@ public class PlanetExtractions {
                 result.add("The weather is cold in the UK");
                 break;
         }
-
-        return result;
     }
 }

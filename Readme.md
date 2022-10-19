@@ -1,7 +1,9 @@
 # Practicando con IntelliJ
 
-## Extract Method
+## Extract
+### Extract Method
 Extraer a un método toda la parte del switch
+llamarlo _updateWithWeather_
 
-ALT + CMD + M
+MacOS: ALT + CMD + M
 
