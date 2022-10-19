@@ -9,11 +9,11 @@ public class PlanetExtractions {
     private static String theWeatherIs;
 
     public List<String> printPlanetFacts(Planet planet, String country) {
+        int planetNameLength = planet.getName().length();
         List<String> result = new ArrayList<>();
         result.add("Planet name is " + planet.getName());
         result.add("Current season is " + planet.getCountryWeather());
         result.add("Number of times the planet rotates around the sun is " + NUMBER_OF_DAYS_IN_A_YEAR);
-        int planetNameLength = planet.getName().length();
         result.add("Number of characters in planet name = " + planetNameLength);
         updateWithWeather(planet, result);
 
