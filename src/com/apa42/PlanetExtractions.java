@@ -15,25 +15,25 @@ public class PlanetExtractions {
         result.add("Current season is " + planet.getCountryWeather());
         result.add("Number of times the planet rotates around the sun is " + NUMBER_OF_DAYS_IN_A_YEAR);
         result.add("Number of characters in planet name = " + planetNameLength);
-        updateWithWeather(planet, result);
+        updateWithWeather(planet, result, "UK");
 
         return result;
     }
 
-    private static void updateWithWeather(Planet planet, List<String> result) {
+    private static void updateWithWeather(Planet planet, List<String> result, String country) {
         switch (planet.getCountryWeather()) {
             case "Spring":
                 theWeatherIs = "The weather is";
-                result.add(theWeatherIs + " warm in the UK");
+                result.add(theWeatherIs + " warm in the " + country);
                 break;
             case "Summer":
-                result.add(theWeatherIs + " hot in the UK");
+                result.add(theWeatherIs + " hot in the " + country);
                 break;
             case "Autumn":
-                result.add(theWeatherIs + " cool in the UK");
+                result.add(theWeatherIs + " cool in the " + country);
                 break;
             default:
-                result.add(theWeatherIs + " cold in the UK");
+                result.add(theWeatherIs + " cold in the " + country);
                 break;
         }
     }

@@ -36,3 +36,8 @@ Extraer a una variable, llamarla _planetNameLength_
 MacOS: ALT + CMD + V
 
 Extra, mover la sentencia de la nueva variable al comienzo de la función
+
+### Extract Parameter
+De la funcion _updateWithWeather_ vamos a extraer _UK_ como parámetro de la función
+
+MacOS: ALT + CMD + P
