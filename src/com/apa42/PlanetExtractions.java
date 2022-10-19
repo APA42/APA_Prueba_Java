@@ -13,7 +13,8 @@ public class PlanetExtractions {
         result.add("Planet name is " + planet.getName());
         result.add("Current season is " + planet.getCountryWeather());
         result.add("Number of times the planet rotates around the sun is " + NUMBER_OF_DAYS_IN_A_YEAR);
-        result.add("Number of characters in planet name = " + planet.getName().length());
+        int planetNameLength = planet.getName().length();
+        result.add("Number of characters in planet name = " + planetNameLength);
         updateWithWeather(planet, result);
 
         return result;

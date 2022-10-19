@@ -27,3 +27,12 @@ seleccionar _Replace all occurrences_
 Nota, me crea un atributo en la clase, quiero el scope en la función (gente java qué opina?)
 
 MacOS: ALT + CMD + F
+
+### Extract Variable
+De la función _printPlanetFacts_
+Línea 16, _planet.getName().length()_ vamos a dar semántica
+Extraer a una variable, llamarla _planetNameLength_
+
+MacOS: ALT + CMD + V
+
+Extra, mover la sentencia de la nueva variable al comienzo de la función
