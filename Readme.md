@@ -85,3 +85,7 @@ Ejemplo de Builder 44:10
 GoldenMasterApprovalTest 48:00
 
 Feature Envy + Wrapper =>Introduce Parameter Object 01:02:41  
+
+## Me he basado en
+https://blog.jetbrains.com/idea/2020/12/3-ways-to-refactor-your-code-in-intellij-idea/
+https://www.youtube.com/watch?v=_Y1y8k-OTCQ
