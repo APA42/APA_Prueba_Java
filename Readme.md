@@ -75,3 +75,13 @@ Seleccionar _Replace constructor with builder_
 
 cambiar _Target Destination Directory_ a los test
  
+
+## Otros ejemplos
+Del vídeo **Refactoring Intro y Live Coding Kata Gilded Rose**
+https://www.youtube.com/watch?v=CIfBC56tPEI
+
+Ejemplo de Builder 44:10
+
+GoldenMasterApprovalTest 48:00
+
+Feature Envy + Wrapper =>Introduce Parameter Object 01:02:41  
